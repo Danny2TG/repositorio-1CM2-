@@ -35,11 +35,11 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/Holamundo.o \
-	${OBJECTDIR}/Mayorde3números.o \
-	${OBJECTDIR}/Mayorde4numeros.o \
-	${OBJECTDIR}/Precedenciadeoperadores.o \
-	${OBJECTDIR}/SerieFibonacci.o
+	${OBJECTDIR}/Hola_mundo.o \
+	${OBJECTDIR}/Mayor_de_3_números.o \
+	${OBJECTDIR}/Mayor_de_4_números.o \
+	${OBJECTDIR}/Precedencia_de_operadores.o \
+	${OBJECTDIR}/Serie_Fibonacci.o
 
 
 # C Compiler Flags
@@ -66,30 +66,30 @@ ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/repositorio_1cm2.exe: ${OBJECTFILES}
 	${MKDIR} -p ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}
 	${LINK.c} -o ${CND_DISTDIR}/${CND_CONF}/${CND_PLATFORM}/repositorio_1cm2 ${OBJECTFILES} ${LDLIBSOPTIONS}
 
-${OBJECTDIR}/Holamundo.o: Holamundo.c
+${OBJECTDIR}/Hola_mundo.o: Hola_mundo.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Holamundo.o Holamundo.c
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Hola_mundo.o Hola_mundo.c
 
-${OBJECTDIR}/Mayorde3números.o: Mayorde3números.c
+${OBJECTDIR}/Mayor_de_3_números.o: Mayor_de_3_números.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Mayorde3números.o Mayorde3números.c
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Mayor_de_3_números.o Mayor_de_3_números.c
 
-${OBJECTDIR}/Mayorde4numeros.o: Mayorde4numeros.c
+${OBJECTDIR}/Mayor_de_4_números.o: Mayor_de_4_números.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Mayorde4numeros.o Mayorde4numeros.c
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Mayor_de_4_números.o Mayor_de_4_números.c
 
-${OBJECTDIR}/Precedenciadeoperadores.o: Precedenciadeoperadores.c
+${OBJECTDIR}/Precedencia_de_operadores.o: Precedencia_de_operadores.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Precedenciadeoperadores.o Precedenciadeoperadores.c
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Precedencia_de_operadores.o Precedencia_de_operadores.c
 
-${OBJECTDIR}/SerieFibonacci.o: SerieFibonacci.c
+${OBJECTDIR}/Serie_Fibonacci.o: Serie_Fibonacci.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
-	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/SerieFibonacci.o SerieFibonacci.c
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Serie_Fibonacci.o Serie_Fibonacci.c
 
 # Subprojects
 .build-subprojects:

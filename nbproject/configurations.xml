@@ -12,11 +12,11 @@
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
-      <itemPath>Holamundo.c</itemPath>
-      <itemPath>Mayorde3números.c</itemPath>
-      <itemPath>Mayorde4numeros.c</itemPath>
-      <itemPath>Precedenciadeoperadores.c</itemPath>
-      <itemPath>SerieFibonacci.c</itemPath>
+      <itemPath>Hola_mundo.c</itemPath>
+      <itemPath>Mayor_de_3_números.c</itemPath>
+      <itemPath>Mayor_de_4_números.c</itemPath>
+      <itemPath>Precedencia_de_operadores.c</itemPath>
+      <itemPath>Serie_Fibonacci.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -40,7 +40,7 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="SerieFibonacci.c" ex="false" tool="0" flavor2="0">
+      <item path="Serie_Fibonacci.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -63,15 +63,15 @@
           <developmentMode>5</developmentMode>
         </asmTool>
       </compileType>
-      <item path="Holamundo.c" ex="false" tool="0" flavor2="0">
+      <item path="Hola_mundo.c" ex="false" tool="0" flavor2="0">
       </item>
-      <item path="Mayorde3números.c" ex="false" tool="0" flavor2="0">
+      <item path="Mayor_de_3_números.c" ex="false" tool="0" flavor2="0">
       </item>
-      <item path="Mayorde4numeros.c" ex="false" tool="0" flavor2="0">
+      <item path="Mayor_de_4_números.c" ex="false" tool="0" flavor2="0">
       </item>
-      <item path="Precedenciadeoperadores.c" ex="false" tool="0" flavor2="0">
+      <item path="Precedencia_de_operadores.c" ex="false" tool="0" flavor2="0">
       </item>
-      <item path="SerieFibonacci.c" ex="false" tool="0" flavor2="0">
+      <item path="Serie_Fibonacci.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
   </confs>
