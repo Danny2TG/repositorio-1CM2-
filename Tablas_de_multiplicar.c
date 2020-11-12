@@ -19,17 +19,18 @@
  */
 int main(int argc, char** argv) {  
     
-    int a = 2, b = 1; 
+    int a = 1, b = 1, top= 10; 
     
-    while (a <= 10)  { 
-        printf ("%d\n tabla de ", a); 
-        while (b<=10) { 
-            printf ("%d\n" b * a); 
+    while (a <= top)  { 
+        printf("\n tabla de %d\n", a); 
+        while (b<=top) { 
+            printf("%d * %d =%d\n", b,a, b * a); 
             
-            b+1;
+            b++;
         } 
-        a+1; 
-        b=a; 
+        a++; 
+        b=1; 
+            printf("\n")   ; 
     }
 
     return (EXIT_SUCCESS);
