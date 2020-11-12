@@ -22,8 +22,8 @@ int main(int argc, char** argv) {
     int a = 1, b = 1, top= 10; 
     
     while (a <= top)  { 
-        printf("\n tabla de %d\n", a); 
-        while (b<=top) { 
+        printf("\n tabla del %d\n", a); 
+        while (b<=10) { 
             printf("%d * %d =%d\n", b,a, b * a); 
             
             b++;
