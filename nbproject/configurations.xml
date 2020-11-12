@@ -17,6 +17,7 @@
       <itemPath>Mayor_de_4_números.c</itemPath>
       <itemPath>Precedencia_de_operadores.c</itemPath>
       <itemPath>Serie_Fibonacci.c</itemPath>
+      <itemPath>Tablas_de_multiplicar.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -40,7 +41,7 @@
       </toolsSet>
       <compileType>
       </compileType>
-      <item path="Serie_Fibonacci.c" ex="false" tool="0" flavor2="0">
+      <item path="Tablas_de_multiplicar.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
     <conf name="Release" type="1">
@@ -72,6 +73,8 @@
       <item path="Precedencia_de_operadores.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="Serie_Fibonacci.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="Tablas_de_multiplicar.c" ex="false" tool="0" flavor2="0">
       </item>
     </conf>
   </confs>
