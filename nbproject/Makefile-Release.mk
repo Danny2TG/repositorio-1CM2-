@@ -40,8 +40,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/Mayor_de_4_números.o \
 	${OBJECTDIR}/Precedencia_de_operadores.o \
 	${OBJECTDIR}/Serie_Fibonacci.o \
-	${OBJECTDIR}/Tablas_de_multiplicar.o \
-	${OBJECTDIR}/Tablas_de_multiplicar_for.o
+	${OBJECTDIR}/Tablas_de_multiplicar_for.o \
+	${OBJECTDIR}/Tablas_de_multiplicar_while.o
 
 
 # C Compiler Flags
@@ -93,15 +93,15 @@ ${OBJECTDIR}/Serie_Fibonacci.o: Serie_Fibonacci.c
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Serie_Fibonacci.o Serie_Fibonacci.c
 
-${OBJECTDIR}/Tablas_de_multiplicar.o: Tablas_de_multiplicar.c
-	${MKDIR} -p ${OBJECTDIR}
-	${RM} "$@.d"
-	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Tablas_de_multiplicar.o Tablas_de_multiplicar.c
-
 ${OBJECTDIR}/Tablas_de_multiplicar_for.o: Tablas_de_multiplicar_for.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Tablas_de_multiplicar_for.o Tablas_de_multiplicar_for.c
+
+${OBJECTDIR}/Tablas_de_multiplicar_while.o: Tablas_de_multiplicar_while.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Tablas_de_multiplicar_while.o Tablas_de_multiplicar_while.c
 
 # Subprojects
 .build-subprojects:
