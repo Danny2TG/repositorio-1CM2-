@@ -40,7 +40,8 @@ OBJECTFILES= \
 	${OBJECTDIR}/Mayor_de_4_números.o \
 	${OBJECTDIR}/Precedencia_de_operadores.o \
 	${OBJECTDIR}/Serie_Fibonacci.o \
-	${OBJECTDIR}/Tablas_de_multiplicar.o
+	${OBJECTDIR}/Tablas_de_multiplicar.o \
+	${OBJECTDIR}/Tablas_de_multiplicar_for.o
 
 
 # C Compiler Flags
@@ -96,6 +97,11 @@ ${OBJECTDIR}/Tablas_de_multiplicar.o: Tablas_de_multiplicar.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Tablas_de_multiplicar.o Tablas_de_multiplicar.c
+
+${OBJECTDIR}/Tablas_de_multiplicar_for.o: Tablas_de_multiplicar_for.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Tablas_de_multiplicar_for.o Tablas_de_multiplicar_for.c
 
 # Subprojects
 .build-subprojects:
