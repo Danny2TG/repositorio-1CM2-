@@ -41,7 +41,9 @@ OBJECTFILES= \
 	${OBJECTDIR}/Precedencia_de_operadores.o \
 	${OBJECTDIR}/Serie_Fibonacci.o \
 	${OBJECTDIR}/Tablas_de_multiplicar_for.o \
-	${OBJECTDIR}/Tablas_de_multiplicar_while.o
+	${OBJECTDIR}/Tablas_de_multiplicar_while.o \
+	${OBJECTDIR}/arreglos.o \
+	${OBJECTDIR}/funScanfarray.o
 
 
 # C Compiler Flags
@@ -102,6 +104,16 @@ ${OBJECTDIR}/Tablas_de_multiplicar_while.o: Tablas_de_multiplicar_while.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/Tablas_de_multiplicar_while.o Tablas_de_multiplicar_while.c
+
+${OBJECTDIR}/arreglos.o: arreglos.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/arreglos.o arreglos.c
+
+${OBJECTDIR}/funScanfarray.o: funScanfarray.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -O2 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/funScanfarray.o funScanfarray.c
 
 # Subprojects
 .build-subprojects:
