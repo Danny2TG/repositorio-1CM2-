@@ -28,12 +28,8 @@ int main(int argc, char** argv) {
         arreglo[0]=arreglo[0] + arreglo[1]; 
         printf ("%d\n", arreglo[0]);
                arreglo[1]=arreglo[0] + arreglo[1]; 
-                printf ("%d\n", arreglo[1]);
-      
-              
-               
-        
-          }
+                printf ("%d\n", arreglo[1]); 
+    }
     
     return (EXIT_SUCCESS);
 }
