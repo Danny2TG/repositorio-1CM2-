@@ -19,31 +19,28 @@
  */
 int main(int argc, char** argv) { 
     
-      int x; 
-    int  y;  
-     printf("\n Ingresa el valor de tu arreglo: ");
+      int x, y; 
+      
+    printf("\n Ingresa la cantidad de elemetos en tu arreglo: ");
     scanf("%d", &x); 
     float arreglo[x]; 
     
       for(y=0;y<x;y++){ 
-        int  z; 
         printf("\n Ingresa un valor: ");
-        scanf("%d", &z); 
-        arreglo[y]=z;
+        scanf("%f", &arreglo[y]); 
+        
     
     } 
     float division=0, rem=0;
-    for(y=0;y<x;y++){ 
-        int  z; 
-        z=arreglo[y]; 
+    for(y=0;y<x;y++){  
         rem=rem+arreglo[y];
         division = rem/x;
-        printf("%d\n\n", z);  
+        printf("%f\n\n", arreglo[y]);  
          
       
     }  
     
-      printf(" % f \n\n El promedio del arreglo es: ", division);
+      printf("  \n\n El promedio del arreglo es: %f", division);
 
     return (EXIT_SUCCESS);
 }
