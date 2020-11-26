@@ -18,19 +18,21 @@
  * 
  */
 int main(int argc, char** argv) { 
-    int n, i, num; 
+    int n; 
+    int  i;  
      printf("\n Ingresa el valor de tu arreglo: ");
     scanf("%d", &n); 
+    float arreglo[n]; 
     
-    int arreglo[n]; 
-     for(i=0;i<n;i++){ 
-        
+      for(i=0;i<n;i++){ 
+        int  num; 
         printf("\n Ingresa un valor: ");
         scanf("%d", &num); 
         arreglo[i]=num;
     
     } 
     for(i=0;i<n;i++){ 
+        int  num; 
         num=arreglo[i]; 
         printf("%d\n", num);
     }
