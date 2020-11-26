@@ -19,34 +19,33 @@
  */
 int main(int argc, char** argv) { 
     
- int x; 
-    int  y;  
+      int x, y; 
+      
      printf("\n Ingresa el valor de tu arreglo: ");
     scanf("%d", &x); 
     float arreglo[x]; 
     
-      for(y=0;y<x;y++){ 
-        int  z; 
+      for(y=0;y<x;y++){  
         printf("\n Ingresa un valor: ");
-        scanf("%d", &z); 
-        arreglo[y]=z;
+        scanf("%f", &arreglo[y]);    
     
     } 
-	float max = arreglo[0];
-	float min = arreglo[0];
+	
+	float max=arreglo[0];
+	float min = max;
 	
 	for(y=0;y<x;y++){ 
 		if (arreglo[y]>max){ 
-			 max = arreglo[y];                
+			max = arreglo[y];                
 		} 
 		if (arreglo[y]<min){ 
-			 min = arreglo[y]; 
+			min = arreglo[y]; 
 			
 		}
 	}
 	printf(" \n el valor minimo es: %f ", min); 
 	printf(" \n el valor maximo es: %f", max);
-                
-    return (EXIT_SUCCESS);
+    
+        return (EXIT_SUCCESS);
 }
 
