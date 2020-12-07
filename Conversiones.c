@@ -15,37 +15,25 @@
 #include <stdlib.h> 
 #include<math.h> 
 
-float CaF(float C){ 
-    return(C*1.8f)+32;
-} 
-float CaK(float C){ 
-    return(C + 273);
-} 
-float FaC(float F){ 
-    return(F -32) /1.8f;
-} 
-float FaK(float F){ 
-    return(F - 32) * 1.8f + 273;
-} 
-float KaC(float K){ 
-    return(K - 273);
-} 
-float KaF(float K){ 
-    return(K - 273) * 1.8f + 32;
-} 
-
-
+void verificar(int op);
+void conversionCaF (); 
+void conversionCaK (); 
+void conversionFaC (); 
+void conversionFaK ();
+void conversionKaC (); 
+void conversionKaF ();
 
 
 
 
 int main(int argc, char** argv) {
     int op; 
-    float equivalencia, C, F, K;
+    float C, F, K;
     
    do
-    { 
-        printf( "Conversion de temperaturas");
+    {   
+        system ("cmd /c cls");
+        printf( "\n Conversion de temperaturas");
         printf( "\n   1. Calcular grados Celsius a Fahrenheit" );
         printf( "\n   2. Calcular grados Celsius a Kelvin." );
         printf( "\n   3. Calcular grados Fahrenheit a Celsius." ); 
@@ -53,57 +41,102 @@ int main(int argc, char** argv) {
         printf( "\n   5. Calcular grados Kelvin a Celsius." ); 
         printf( "\n   6. Calcular grados Kelvin a Fahrenheit." );
         printf( "\n   7. Salir." );
-        printf( "\n\n   Introduzca opci%cn (1-7): ");
+        printf( "\n\n   Introduzca opcicn (1-7): ");
 
         scanf( "%d", &op);
-
-        switch ( op )
-        {
-            case 1: printf( "\n   Introduzca los grados Celsius: ");
-                    scanf( "%f", &C ); 
-                    float equivalencia = CaF(C);
-                    printf( "\n  Equivalen a: %f\n\n", equivalencia );
-                    break;
-
-            case 2: printf( "\n   Introduzca los grados Celsius: " );
-                    scanf( "%f", &C ); 
-                    equivalencia = CaK(C); 
-                    printf( "\n  Equivalen a: %f\n\n", equivalencia );
-                    break;
-
-            case 3: printf( "\n   Introduzca los grados Fahrenheit: ");
-                    scanf( "%f", &F ); 
-                    equivalencia = FaC(F);
-                    printf( "\n   Equivalen a: %f\n\n", equivalencia ); 
-                    
-            case 4: printf( "\n   Introduzca los grados Fahrenheit: ");
-                    scanf( "%f", &F ); 
-                    equivalencia = FaK(F);
-                    printf( "\n   Equivalen a: %f\n\n", equivalencia );
-                    break;
-
-            case 5: printf( "\n   Introduzca los grados Kelvin: ");
-                    scanf( "%f", &K ); 
-                    equivalencia = KaC(K);
-                    printf( "\n  Equivalen a: %f\n\n", equivalencia);
-                    break;
-
-            case 6: printf( "\n   Introduzca los grados Kelvin: ");
-                    scanf( "%f", &K ); 
-                    equivalencia = KaF(K);
-                    printf( "\n   Equivalen a: %f\n\n", equivalencia ); 
-                    break;
-                    
-            case 7: printf( "\n   Hasta la proximaaaa ");
-                    break;
-                                     
-         }
-
-       
-
+        verificar(op);
     } while ( op != 7 );
-
-    
+   
     return (EXIT_SUCCESS);
 }
 
+ void verificar(int op) { 
+     switch (op){ 
+         case 1: {
+                    conversionCaF ();
+                    break;
+         }
+            case 2: {
+                    conversionCaK ();
+                    break;
+            }
+            case 3: {
+                    conversionFaC ();
+                    break;
+            }
+            case 4: {
+                   conversionFaK ();
+                    break;
+            }
+            case 5:  {
+                    conversionKaC ();
+                    break;
+            }
+            case 6: {
+                    conversionKaF ();
+                    break;
+            }
+            case 7: {
+                    system ("cmd /c cls");
+                    printf( "\n   Hasta la proximaaaa ");
+                    break;
+            }
+     }
+ 
+
+ }
+ 
+void conversionCaF (){  
+    system ("cmd /c cls");
+    printf( "\n   Introduzca los grados Celsius: "); 
+    float C = 0;
+    scanf( "%f", &C ); 
+    float F = C*  1.8f + 32; 
+    printf( "\n  Equivalen a: %f\n\n", F ); 
+    
+} 
+void conversionCaK(){  
+    system ("cmd /c cls");
+    printf( "\n   Introduzca los grados Celsius: "); 
+    float C = 0;
+    scanf( "%f", &C ); 
+    float K = C + 273;
+    printf( "\n  Equivalen a: %f\n\n", K ); 
+     
+} 
+void conversionFaC(){ 
+    system ("cmd /c cls");
+    printf( "\n   Introduzca los grados Celsius: "); 
+    float F = 0; 
+    scanf( "%f", &F ); 
+    float C = F*  1.8f - 32; 
+    printf( "\n  Equivalen a: %f\n\n", C ); 
+     
+} 
+void conversionFaK(){  
+    system ("cmd /c cls");
+    printf( "\n   Introduzca los grados Celsius: "); 
+    float F = 0; 
+    scanf( "%f", &F ); 
+    float K = F *  1.8f - 32 + 273;  
+    printf( "\n  Equivalen a: %f\n\n", K ); 
+    
+} 
+void conversionKaC(){ 
+    system ("cmd /c cls");
+    printf( "\n   Introduzca los grados Celsius: "); 
+    float K = 0;
+    scanf( "%f", &K ); 
+    float C = K - 273;  
+    printf( "\n  Equivalen a: %f\n\n", C ); 
+     
+} 
+void conversionKaF(){ 
+    system ("cmd /c cls");
+    printf( "\n   Introduzca los grados Celsius: "); 
+    float K = 0; 
+    scanf( "%f", &K ); 
+    float F = K *  1.8f + 32 - 273;  
+    printf( "\n  Equivalen a: %f\n\n", F ); 
+     
+} 
